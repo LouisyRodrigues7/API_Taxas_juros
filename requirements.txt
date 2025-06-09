@@ -1,5 +1,9 @@
 requests
 pandas
-pymysql
+pymysql 
 sqlalchemy
-notebook
+matplotlib
+scikit-learn
+seaborn
+prophet
+plotly
