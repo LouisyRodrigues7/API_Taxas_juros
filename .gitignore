@@ -1,0 +1,5 @@
+# Ignorar todos os arquivos CSV
+*.csv
+
+# Ignorar todos os arquivos de banco de dados
+*.db
