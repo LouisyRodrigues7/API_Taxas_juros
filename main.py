@@ -4,7 +4,7 @@ from src.extractTransform import requestTaxaJuros
 from src.load import salvarCsv, salvarSQLite
 
 # Etapa 1: Baixa os dados
-df = requestTaxaJuros()
+df = requestTaxaJuros("2022-01-01", "2025-05-25")
 
 # Etapa 2: Mostra primeiras linhas e tipos
 print(df.head())
