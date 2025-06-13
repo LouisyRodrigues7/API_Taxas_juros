@@ -7,7 +7,7 @@ def requestTaxaJuros(inicio: str, fim: str):
     Extrai dados da API de Taxa de Juros do BCB e retorna um DataFrame.
     """
 
-    filtro = f"IniciarPeriodo ge '{inicio} and FimPeriodo le '{fim}'"
+    filtro = f"InicioPeriodo ge '{inicio}' and FimPeriodo le '{fim}'"
     filtro_encoded = requests.utils.quote(filtro)
     url = f"https://olinda.bcb.gov.br/olinda/servico/taxaJuros/versao/v2/odata/ConsultaUnificada?$top=1000000&$format=json&$filter={filtro_encoded}"
     response = requests.get(url)
