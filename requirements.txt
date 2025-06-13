@@ -7,3 +7,4 @@ scikit-learn
 seaborn
 prophet
 plotly
+jinja2
